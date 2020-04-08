@@ -184,10 +184,14 @@ x3dom.X3DCanvas = function(x3dElem, canvasIdx)
 x3dom.X3DCanvas.prototype.bindEventListeners = function() {
     var that = this;
 
-    this.onMouseDown = function (evt) {
-        if(!this.isMulti) {
-            this.focus();
-            this.classList.add('x3dom-canvas-mousedown');
+    this.onMouseDown = function ( evt )
+    {
+        if ( !this.isMulti )
+        {
+            this.focus( {
+                preventScroll : true
+            } );
+            this.classList.add( "x3dom-canvas-mousedown" );
 
             switch(evt.button) {
                 case 0:  this.mouse_button = 1; break;  //left
