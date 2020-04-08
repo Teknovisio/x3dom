@@ -312,8 +312,8 @@ x3dom.X3DCanvas.prototype.bindEventListeners = function() {
             this.parent.doc.onWheel(that.gl, this.mouse_drag_x, this.mouse_drag_y, originalY);
             this.parent.doc.needRender = true;
 
-            evt.preventDefault();
-            evt.stopPropagation();
+            // evt.preventDefault();
+            // evt.stopPropagation();
         }
     }
 
@@ -341,8 +341,8 @@ x3dom.X3DCanvas.prototype.bindEventListeners = function() {
             this.parent.doc.onWheel(that.gl, this.mouse_drag_x, this.mouse_drag_y, originalY);
             this.parent.doc.needRender = true;
 
-            evt.preventDefault();
-            evt.stopPropagation();
+            // evt.preventDefault();
+            // evt.stopPropagation();
         }
     }
 
